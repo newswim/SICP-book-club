@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "SICP Book Club!"
-baseurl = "http://example.org/"
+baseurl = "https://newswim.github.io/SICP-book-club/"
 
 publishDir = "docs"
 
