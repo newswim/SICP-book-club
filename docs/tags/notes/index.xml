@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Notes on SICP Book Club!</title>
-    <link>https://newswim.github.io/SICP-book-club/tags/notes/index.xml</link>
+    <link>https://sicpbook.club/tags/notes/index.xml</link>
     <description>Recent content in Notes on SICP Book Club!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://newswim.github.io/SICP-book-club/tags/notes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sicpbook.club/tags/notes/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Book_Club_02</title>
-      <link>https://newswim.github.io/SICP-book-club/post/Book_Club_02/</link>
+      <link>https://sicpbook.club/post/Book_Club_02/</link>
       <pubDate>Sat, 25 Feb 2017 01:08:57 -0600</pubDate>
       
-      <guid>https://newswim.github.io/SICP-book-club/post/Book_Club_02/</guid>
+      <guid>https://sicpbook.club/post/Book_Club_02/</guid>
       <description>
 
 &lt;h2 id=&#34;feb-22-2017&#34;&gt;Feb 22, 2017&lt;/h2&gt;
@@ -53,10 +53,10 @@
     
     <item>
       <title>Personal Notes from Lecture 1B</title>
-      <link>https://newswim.github.io/SICP-book-club/post/personal-notes-for-lecture-1b/</link>
+      <link>https://sicpbook.club/post/personal-notes-for-lecture-1b/</link>
       <pubDate>Sat, 25 Feb 2017 01:06:25 -0600</pubDate>
       
-      <guid>https://newswim.github.io/SICP-book-club/post/personal-notes-for-lecture-1b/</guid>
+      <guid>https://sicpbook.club/post/personal-notes-for-lecture-1b/</guid>
       <description>
 
 &lt;h1 id=&#34;02-procedures-and-processes&#34;&gt;02. Procedures and Processes&lt;/h1&gt;
@@ -299,10 +299,10 @@
     
     <item>
       <title>Personal Notes from Lecture 1A</title>
-      <link>https://newswim.github.io/SICP-book-club/post/personal-notes-for-lecture-1a/</link>
+      <link>https://sicpbook.club/post/personal-notes-for-lecture-1a/</link>
       <pubDate>Sat, 25 Feb 2017 00:41:02 -0600</pubDate>
       
-      <guid>https://newswim.github.io/SICP-book-club/post/personal-notes-for-lecture-1a/</guid>
+      <guid>https://sicpbook.club/post/personal-notes-for-lecture-1a/</guid>
       <description>
 
 &lt;h3 id=&#34;some-wild-build-up-to-what-is-it-that-programmers-are-doing&#34;&gt;Some wild build up to &amp;lsquo;What is it that programmers are doing?&amp;rsquo;&lt;/h3&gt;

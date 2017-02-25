@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "SICP Book Club!"
-baseurl = "https://newswim.github.io/SICP-book-club/"
+baseurl = "https://sicpbook.club"
 theme = "code-editor"
 publishDir = "docs"
 pygmentsuseclasses = false
