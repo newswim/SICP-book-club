@@ -2,6 +2,8 @@ languageCode = "en-us"
 title = "SICP Book Club!"
 baseurl = "http://example.org/"
 
+publishDir = "docs"
+
 theme = "code-editor"
 
 [params]
