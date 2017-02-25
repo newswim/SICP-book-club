@@ -1,13 +1,13 @@
 languageCode = "en-us"
 title = "SICP Book Club!"
-baseurl = "http://www.sicpbook.club/"
+baseurl = "http://www.sicpbook.club"
 theme = "code-editor"
 publishDir = "docs"
 pygmentsuseclasses = false
-# pygmentsstyle = "zenburn"
 PygmentsCodeFences = true
+# pygmentsstyle = "zenburn"
 
 [params]
-    author = "John Doe"
+    author = "Dan Minshew"
     # required for `code-editor` theme
     locale = "en-US"

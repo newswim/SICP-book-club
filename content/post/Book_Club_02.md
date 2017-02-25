@@ -1,7 +1,7 @@
 +++
 date = "2017-02-25T01:08:57-06:00"
 title = "Book_Club_02"
-categories = ['']
+categories = ['minutes']
 tags = ['notes', 'book club']
 
 +++

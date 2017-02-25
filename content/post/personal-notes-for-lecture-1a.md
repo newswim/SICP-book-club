@@ -1,7 +1,7 @@
 +++
 date = "2017-02-25T00:41:02-06:00"
 title = "Personal Notes from Lecture 1A"
-categories = ['']
+categories = ['notes']
 tags = ['lectures']
 
 +++
