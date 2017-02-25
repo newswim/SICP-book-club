@@ -1,0 +1,10 @@
+languageCode = "en-us"
+title = "SICP Book Club!"
+baseurl = "http://example.org/"
+
+theme = "code-editor"
+
+[params]
+    author = "John Doe"
+    # required for `code-editor` theme
+    locale = "en-US"
