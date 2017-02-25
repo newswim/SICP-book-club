@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SICP Book Club!</title>
-    <link>https://newswim.github.io/SICP-book-club/index.xml</link>
-    <description>Recent content on SICP Book Club!</description>
+    <title>Posts on SICP Book Club!</title>
+    <link>https://newswim.github.io/SICP-book-club/post/index.xml</link>
+    <description>Recent content in Posts on SICP Book Club!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 25 Feb 2017 01:08:57 -0600</lastBuildDate>
-    <atom:link href="https://newswim.github.io/SICP-book-club/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://newswim.github.io/SICP-book-club/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Book_Club_02</title>

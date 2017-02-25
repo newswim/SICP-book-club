@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Book Club on SICP Book Club!</title>
+    <link>https://newswim.github.io/SICP-book-club/tags/book-club/index.xml</link>
+    <description>Recent content in Book Club on SICP Book Club!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://newswim.github.io/SICP-book-club/tags/book-club/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Book_Club_02</title>
+      <link>https://newswim.github.io/SICP-book-club/post/Book_Club_02/</link>
+      <pubDate>Sat, 25 Feb 2017 01:08:57 -0600</pubDate>
+      
+      <guid>https://newswim.github.io/SICP-book-club/post/Book_Club_02/</guid>
+      <description>
+
+&lt;h2 id=&#34;feb-22-2017&#34;&gt;Feb 22, 2017&lt;/h2&gt;
+
+&lt;h4 id=&#34;topics-discussed&#34;&gt;Topics Discussed&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Cond&lt;/li&gt;
+&lt;li&gt;If&lt;/li&gt;
+&lt;li&gt;Predicates and Clauses&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Question: &lt;a href=&#34;http://stackoverflow.com/questions/1171252/whats-the-explanation-for-exercise-1-6-in-sicp&#34;&gt;What&amp;rsquo;s the explanation for Exercise 1.6 in SICP?&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.scipy-lectures.org/&#34;&gt;http://www.scipy-lectures.org/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;reference-material-and-random-stuff&#34;&gt;Reference Material and &lt;em&gt;random stuff&lt;/em&gt;&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cs.toronto.edu/~chechik/courses12/csc2125/paper11.pdf&#34;&gt;Meaningful Modeling: What Is The Semantics of &amp;ldquo;Semantics&amp;rdquo;?, (Slides), (Harel, Rumpe 2004)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.wisdom.weizmann.ac.il/~dharel/papers/ModSemantics.pdf&#34;&gt;MM: WITSoS? (Article)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Travelling_salesman_problem&#34;&gt;Traveling Salesman Problem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mathemainzel.info/files/x86asmref.html&#34;&gt;Assembly 80x86 OpCodes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/results?search_query=erik+demaine+p+and+np+problems&#34;&gt;&amp;ldquo;erik demaine p and np problems&amp;rdquo; on YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.crockford.com/wrmg/base32.html&#34;&gt;Base32 Encoding (Crockford)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://archive.org/search.php?query=structure%20and%20interpretation&#34;&gt;SICP on Archive.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;prolog&#34;&gt;Prolog&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Prolog&#34;&gt;Prolog - wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cs.toronto.edu/~sheila/384/w11/simple-prolog-examples.html&#34;&gt;Prolog Examples&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

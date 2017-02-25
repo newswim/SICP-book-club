@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intro on SICP Book Club!</title>
+    <link>https://newswim.github.io/SICP-book-club/tags/intro/index.xml</link>
+    <description>Recent content in Intro on SICP Book Club!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://newswim.github.io/SICP-book-club/tags/intro/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Introduction &#43;&#43; Section 1.1</title>
+      <link>https://newswim.github.io/SICP-book-club/post/intro-and-section-1.1/</link>
+      <pubDate>Sat, 25 Feb 2017 00:41:02 -0600</pubDate>
+      
+      <guid>https://newswim.github.io/SICP-book-club/post/intro-and-section-1.1/</guid>
+      <description>
+
+&lt;h3 id=&#34;some-wild-build-up-to-what-is-it-that-programmers-are-doing&#34;&gt;Some wild build up to &amp;lsquo;What is it that programmers are doing?&amp;rsquo;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;It is intended to help us learn how to think&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;hellip; .&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip; .&lt;/p&gt;
+
+&lt;p&gt;Some time passes, I pick up notes around 0:35:00&lt;/p&gt;
+
+&lt;h3 id=&#34;a-general-framework-for-learning-a-computer-language&#34;&gt;A General Framework (for learning a computer language)&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;What are the primitive elements?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;What are the means of combination?&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What are the ways of putting things together?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What are the means of abstraction?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;How do we take those primitive things and
+     build something complicated with them?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;Some primitive data in LISP&amp;hellip;&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;3&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The number 3.&lt;/p&gt;
+
+&lt;p&gt;However, if we&amp;rsquo;re being very pedantic, it&amp;rsquo;s not even the number Three itself, it&amp;rsquo;s some Platonic idea of &amp;lsquo;what Three means&amp;rsquo;.&lt;/p&gt;
+
+&lt;p&gt;Still, it&amp;rsquo;s a 3.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;17.4&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Some representation of &amp;lsquo;Seventeen Point Four&amp;rsquo;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;+&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;A name for the primitive method of adding things.&lt;/p&gt;
+
+&lt;p&gt;A name for Plato&amp;rsquo;s concept of how you add things.&lt;/p&gt;
+
+&lt;h4 id=&#34;what-is-the-sum-of-these-numbers&#34;&gt;What is the sum of these numbers?&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;+ &lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;17.4&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;;; -&amp;gt; 25.4&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This is called a &lt;strong&gt;Combination&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;A Combination consists, in general, of applying an operator to some opperands.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;+ &lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;17.4&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+  &lt;span style=&#34;color: #f92672&#34;&gt;^&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;^&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;----&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;^&lt;/span&gt;
+   &lt;span style=&#34;color: #e6db74&#34;&gt;\ &lt;/span&gt;    &lt;span style=&#34;color: #e6db74&#34;&gt;\_&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;____&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;operator&lt;/span&gt;   &lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;\&lt;/span&gt;
+                &lt;span style=&#34;color: #f8f8f2&#34;&gt;operands&lt;/span&gt;
+&lt;span style=&#34;color: #e6db74&#34;&gt;\_&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;____________/&lt;/span&gt;
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;combination&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Note: I&amp;rsquo;m using &lt;code&gt;clojure&lt;/code&gt; for code highlighting.. (it&amp;rsquo;s a lisp after all)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;From these principles, we have enough to form more complex combinations.&lt;/p&gt;
+
+&lt;p&gt;The reason that we can get this complexity, is because the operands themselves can be combinations.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;+ &lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;* &lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;6&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;8&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;;; -&amp;gt; 43&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&#34;little-bit-on-syntax&#34;&gt;Little bit on Syntax&lt;/h4&gt;
+
+&lt;p&gt;LISP uses &lt;strong&gt;prefix&lt;/strong&gt; notation, meaning the operator is written to the left of the operands. It is also &lt;em&gt;fully parenthesized&lt;/em&gt;, and the parenthesis are there to make expressions written in the language less ambiguous.&lt;/p&gt;
+
+&lt;p&gt;In mathematics, parentheses are often used to mean grouping, and it&amp;rsquo;s okay to sometimes leave them out, however in Lisp, you cannot leave out parenthesis, and you can not arbitrarily add them.&lt;/p&gt;
+
+&lt;p&gt;Putting in parenthesis always means precisely &amp;ldquo;this is an operation.&amp;rdquo; (eg. apply an operator to operands).&lt;/p&gt;
+
+&lt;p&gt;Really, we&amp;rsquo;re writing trees.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;;; it&amp;#39;s hard to make ascii trees.&lt;/span&gt;
+
+        &lt;span style=&#34;color: #f8f8f2&#34;&gt;+ &lt;/span&gt;      &lt;span style=&#34;color: #75715e&#34;&gt;;; operator&lt;/span&gt;
+       &lt;span style=&#34;color: #f8f8f2&#34;&gt;/ &lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;\&lt;/span&gt;
+      &lt;span style=&#34;color: #f8f8f2&#34;&gt;/ &lt;/span&gt;  &lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;\&lt;/span&gt;
+     &lt;span style=&#34;color: #f8f8f2&#34;&gt;/ &lt;/span&gt;    &lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;\&lt;/span&gt;
+    &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;       &lt;span style=&#34;color: #f8f8f2&#34;&gt;*&lt;/span&gt;
+   &lt;span style=&#34;color: #f8f8f2&#34;&gt;/ &lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;\ &lt;/span&gt;    &lt;span style=&#34;color: #f8f8f2&#34;&gt;/ &lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;\&lt;/span&gt;
+  &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;   &lt;span style=&#34;color: #f8f8f2&#34;&gt;+ &lt;/span&gt;  &lt;span style=&#34;color: #ae81ff&#34;&gt;9&lt;/span&gt;   &lt;span style=&#34;color: #f8f8f2&#34;&gt;+&lt;/span&gt;
+ &lt;span style=&#34;color: #f8f8f2&#34;&gt;/ &lt;/span&gt;  &lt;span style=&#34;color: #f8f8f2&#34;&gt;/ &lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;\ &lt;/span&gt;    &lt;span style=&#34;color: #f8f8f2&#34;&gt;/ &lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;\&lt;/span&gt;
+&lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;   &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;   &lt;span style=&#34;color: #ae81ff&#34;&gt;7&lt;/span&gt;   &lt;span style=&#34;color: #ae81ff&#34;&gt;8&lt;/span&gt;   &lt;span style=&#34;color: #ae81ff&#34;&gt;8&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;this-is-called-tree-accumulation&#34;&gt;This is called &lt;code&gt;tree accumulation&lt;/code&gt;&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Really whats going on are we&amp;rsquo;re writing trees, and parentheses are just a way to write a two-dimensionally structure as a linear character string.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;let-s-ask-lisp&#34;&gt;Let&amp;rsquo;s ASK LISP !!&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(+ &lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;4&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;8&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;;; 15&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;HOLY SHIT!&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(+ (* &lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(+ &lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;7&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;13.5&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;;; 54.5&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;my god.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;;; indentation, &amp;quot;pretty printing&amp;quot;&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(+ (* &lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+   &lt;span style=&#34;color: #f8f8f2&#34;&gt;(* &lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;47&lt;/span&gt;
+      &lt;span style=&#34;color: #f8f8f2&#34;&gt;(- &lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;20&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;6.8&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+   &lt;span style=&#34;color: #ae81ff&#34;&gt;12&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;;; 647.4 (or something)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Wow. Well, those are the primitives, eg. the Means of Combination. Let&amp;rsquo;s move on to&amp;hellip;&lt;/p&gt;
+
+&lt;h3 id=&#34;the-means-of-abstraction&#34;&gt;The Means of &lt;strong&gt;Abstraction&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;We use &lt;code&gt;DEFINE&lt;/code&gt;,&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;DEFINE&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;A&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(+ &lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(+ A&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;A)&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;;; -&amp;gt; 625&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;DEFINE&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;B&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(+ A&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(* &lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;A)))&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;B&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;;; -&amp;gt; 150&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(* A&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(/ B&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;;; -&amp;gt; 55&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Let&amp;rsquo;s say we want to name the general term for, &amp;lsquo;multiplying a number by itself&amp;rsquo; &amp;ndash; how would this be written?&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;DEFINE&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;square&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x)&lt;/span&gt;
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;(* x&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x))&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;;; use it in a sentence..&lt;/span&gt;
+
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;TO&lt;/span&gt;   &lt;span style=&#34;color: #f8f8f2&#34;&gt;SQUARE&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;SOMETHING&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;DEFINE&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;square&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x)&lt;/span&gt;
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;(* x&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x))&lt;/span&gt;
+   &lt;span style=&#34;color: #f92672&#34;&gt;^&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;^&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;^&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;MULT&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;IT&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;BY&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;ITSELF&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;sort of yes!&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A notation for defining a procedure&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;However, it&amp;rsquo;s still kind of confusing. It&amp;rsquo;s not totally clear that you&amp;rsquo;re &lt;em&gt;naming something&lt;/em&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;DEFINE&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;SQUARE&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;LAMBDA&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;x&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(* x&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x)))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Here, we&amp;rsquo;re clearly naming something &lt;code&gt;SQUARE&lt;/code&gt;.
+- &lt;code&gt;Lambda&lt;/code&gt; is Lisp&amp;rsquo;s way of saying &amp;lsquo;make a procedure&amp;rsquo;&lt;/p&gt;
+
+&lt;p&gt;In general, we&amp;rsquo;ll be using the more concise, first form. However try to keep in mind that to the Lisp interpreter, there is no difference between the two, and in fact, what we&amp;rsquo;re asking semantically is closer to the second form.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;define&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;square&lt;/span&gt;
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;lambda&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;x&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(* x&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+    &lt;span style=&#34;color: #75715e&#34;&gt;;; MAKE A PROCEDURE&lt;/span&gt;
+          &lt;span style=&#34;color: #75715e&#34;&gt;;; WITH THE ARGUMENT &amp;#39;X&amp;#39;&lt;/span&gt;
+              &lt;span style=&#34;color: #75715e&#34;&gt;;; THAT RETURNS THE RESULT OF MULTIPLYING X BY X&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;In this 1986 lecture, the author defines this ability
+for an interpreter to accept either form, with one
+being more human-readable as&amp;hellip; (drum roll)&lt;/p&gt;
+
+&lt;h3 id=&#34;syntactic-sugar&#34;&gt;Syntactic Sugar&lt;/h3&gt;
+
+&lt;p&gt;&amp;ldquo;Having somewhat more convenient surface forms for typing something&amp;rdquo;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;DEFINE&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;SQUARE&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;X)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(* X&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;X))&lt;/span&gt;   &lt;span style=&#34;color: #75715e&#34;&gt;;; -&amp;gt; SQUARE&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;SQUARE&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1001&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;                 &lt;span style=&#34;color: #75715e&#34;&gt;;; -&amp;gt; 1002001&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;SQUARE&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(+ &lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;7&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;              &lt;span style=&#34;color: #75715e&#34;&gt;;; -&amp;gt; 144&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(+ (&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;SQUARE&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;SQUARE&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;     &lt;span style=&#34;color: #75715e&#34;&gt;;; -&amp;gt; 25&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;;; We can also use it in something more complicated.&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;SQUARE&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;SQUARE&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;SQUARE&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1001&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)))&lt;/span&gt;     &lt;span style=&#34;color: #75715e&#34;&gt;;; 10050010002...&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;;; And, if we just ask the definition..&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;SQUARE&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;;; #[COMPOUND-PROCEDURE SQUARE]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4 id=&#34;two-more-examples-of-defining&#34;&gt;Two more examples of defining&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;define&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;average&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;y)&lt;/span&gt;
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;(/ (+ x&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;y)&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;define&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;mean-square&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;y)&lt;/span&gt;
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;average&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;square&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x)&lt;/span&gt;
+           &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;square&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;y)))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Having defined &lt;code&gt;average&lt;/code&gt; and &lt;code&gt;square&lt;/code&gt;, we can start talking about the &amp;lsquo;mean-square&amp;rsquo; of something.&lt;/p&gt;
+
+&lt;p&gt;Having defined &lt;code&gt;SQUARE&lt;/code&gt;, it can be used &lt;em&gt;AS IF&lt;/em&gt; it were a primitive. It doesn&amp;rsquo;t matter whether it was something built into the language, or something that we ourselves have defined.&lt;/p&gt;
+
+&lt;p&gt;This is a key thing in Lisp.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The things you construct have all the power and flexibility as if they were primitives.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;+&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;;; #[COMPOUND-PROCEDURE +]&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You should not be able to tell, in general, between things that are built in, and things that are compound. Why? Because the things that are compound have been wrapped in an abstraction.&lt;/p&gt;
+
+&lt;h3 id=&#34;example-absolute-value-function&#34;&gt;Example: Absolute Value Function&lt;/h3&gt;
+
+&lt;p&gt;This is what&amp;rsquo;s called a &lt;em&gt;Case Analysis&lt;/em&gt;&lt;/p&gt;
+          { -x  for  x &lt; 0 }
+abs(x) =  {  0  for  x = 0 }
+          {  x  for  x &gt; 0 }
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;DEFINE&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;ABS&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;X)&lt;/span&gt;
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;COND&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;((&amp;lt; X&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(- X))&lt;/span&gt;       &lt;span style=&#34;color: #75715e&#34;&gt;;; clauses for COND&lt;/span&gt;
+        &lt;span style=&#34;color: #f8f8f2&#34;&gt;((= X&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+        &lt;span style=&#34;color: #f8f8f2&#34;&gt;((&amp;gt; X&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;X)))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-&lt;/code&gt; is a subtraction OR negation operator (depending on # args)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;define&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;abs&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x)&lt;/span&gt;
+ &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;if &lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&amp;lt; x&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+     &lt;span style=&#34;color: #f8f8f2&#34;&gt;(- x)&lt;/span&gt;
+     &lt;span style=&#34;color: #f8f8f2&#34;&gt;x))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This form is essentially the same. Either can be thought of as syntactic sugar.&lt;/p&gt;
+
+&lt;h3 id=&#34;which-when-of-define&#34;&gt;Which/When of &lt;code&gt;DEFINE&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;You might use &lt;code&gt;DEFINE&lt;/code&gt; slightly differently depending on whether or not you&amp;rsquo;re defining a procedure.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;DEFINE&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;SQUARE&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;X)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(* X&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;X))&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;;; or&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;DEFINE&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;SQUARE&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;LAMBDA&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;X&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(* X&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;X)))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The first is a kind of special, but probably more common case, for defining procedures. The second can be thought of as &amp;lsquo;Define the &lt;em&gt;symbol&lt;/em&gt; &lt;code&gt;SQUARE&lt;/code&gt;&amp;lsquo;&lt;/p&gt;
+
+&lt;p&gt;Yup. // TODO: wtf.&lt;/p&gt;
+
+&lt;p&gt;NOTES:
+- are there any structural differences between the two?
+- are there any concerns to do with memory, performance, etc.?
+- is the first one a Lambda function?&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A little more on that whole thing&amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;;; this is sort of -definition- vs -expression-&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;define&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(* &lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;define&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;d&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(* &lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+
+&lt;span style=&#34;color: #75715e&#34;&gt;;; when used, results..&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;a&lt;/span&gt;       &lt;span style=&#34;color: #75715e&#34;&gt;;; -&amp;gt; 25&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;d&lt;/span&gt;       &lt;span style=&#34;color: #75715e&#34;&gt;;; -&amp;gt; compound-procedure d&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;d&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;     &lt;span style=&#34;color: #75715e&#34;&gt;;; -&amp;gt; 25 (same as evocation with 0 args)&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;a&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;     &lt;span style=&#34;color: #75715e&#34;&gt;;; -&amp;gt; error , (25 is not an operator that can be applied)&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(* a&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;a)&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;;; -&amp;gt; 25&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3 id=&#34;the-heron-of-alexandria-example&#34;&gt;The Heron of Alexandria example&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;TO FIND AN APPROXIMATION TO SQRT(X)
+- Make a guess  (G)
+- Improve the guess by averaging G and X/G
+- Keep improving the guess until it is good enough
+- Use 1 as an initial guess
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;A method of successive averaging. Let&amp;rsquo;s write it in Lisp!&lt;/p&gt;
+
+&lt;p&gt;but wait.. what it is mean &amp;lsquo;to try a guess for the square root of x&amp;rsquo;?&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;DEFINE&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;TRY&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;X)&lt;/span&gt;
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;IF&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;GOOD-ENOUGH?&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;GUESS&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;X)&lt;/span&gt;
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;GUESS&lt;/span&gt;
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;TRY&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;IMPROVE&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;GUESS&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;X)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;X)))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The next part states, in order to compute square roots..&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;DEFINE&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;SQRT&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;X)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;TRY&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;X))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Ok but, how is a guess good enough? How do we improve a guess?&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;define&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;improve&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x)&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;average&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(/ x&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess)))&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;define&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;good-enough?&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x)&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&amp;lt; (&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;abs&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(- (&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;square&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x))&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;.001))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;To improve, we average the guess with the quotient of dividing &lt;code&gt;x&lt;/code&gt; by the &lt;code&gt;guess&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;To check if it&amp;rsquo;s good enough, one way is to ask, &amp;lsquo;when I take this guess and square it, then subtract x, do I get a small enough number left over?&amp;rsquo;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;let-s-look-at-the-structure-of-that-a-little-bit&#34;&gt;Let&amp;rsquo;s look at the structure of that a little bit&amp;hellip;&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;SQRT&lt;/code&gt; - some type of module, that is defined in terms of &lt;code&gt;TRY&lt;/code&gt;, etc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;            `SQRT`&lt;/span&gt;
+&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;              |&lt;/span&gt;
+&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;            `TRY`&lt;/span&gt;
+&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;            /    \&lt;/span&gt;
+&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;    GOOD-ENOUGH?  IMPROVE&lt;/span&gt;
+&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;       /     \        \&lt;/span&gt;
+&lt;span style=&#34;color: #960050; background-color: #1e0010&#34;&gt;     ABS    SQUARE    AVG&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;But wait.. &lt;code&gt;TRY&lt;/code&gt; is defined in terms of &lt;code&gt;GOOD-ENOUGH?&lt;/code&gt; and &lt;code&gt;IMPROVE&lt;/code&gt;, but also in terms of &lt;code&gt;TRY&lt;/code&gt; again. It&amp;rsquo;s definition includes its own implementation, which may make a geometer gag.&lt;/p&gt;
+
+&lt;p&gt;But in a way, it must know what Trying is, in order to define what it is doing.&lt;/p&gt;
+
+&lt;p&gt;We can write down what this means..&lt;/p&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;SQUARE&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;..&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;TRY&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;..&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;TRY&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;IMPROVE&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;;; average of 1 and 2/1 -&amp;gt; 1.5&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;...&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;TRY&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1.5&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;..&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;TRY&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;AVERAGE&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1.5&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(/ &lt;/span&gt;&lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1.5&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;..&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;TRY&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1.3333&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;...&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;TRY&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1.41667&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;...&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;;; -&amp;gt; 1.41421568&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;this is constantly &lt;em&gt;reducing&lt;/em&gt;, in a sense.&lt;/p&gt;
+
+&lt;p&gt;Good enough.&lt;/p&gt;
+
+&lt;h4 id=&#34;recursive-definition-is-what-that-is&#34;&gt;Recursive Definition (is what that is)&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Allows for infinite computations that go on until something is true.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;define&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;sqrt&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x)&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;define&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;improve&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess)&lt;/span&gt;
+        &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;average&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(/ x&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess)))&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;define&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;good-enough?&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess)&lt;/span&gt;
+        &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&amp;lt; (&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;abs&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(- (&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;square&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x))&lt;/span&gt;
+        &lt;span style=&#34;color: #f8f8f2&#34;&gt;.001))&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;define&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;try&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess)&lt;/span&gt;
+        &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;if &lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;good-enough?&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess)&lt;/span&gt;
+            &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess&lt;/span&gt;
+            &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;try&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;improve&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess))))&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;try&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;improve&lt;/code&gt;, &lt;code&gt;good-enough?&lt;/code&gt; and &lt;code&gt;try&lt;/code&gt; are all packages inside of the &lt;code&gt;SQRT&lt;/code&gt; module.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is called &lt;em&gt;Block Structure&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;summarize&#34;&gt;Summarize&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What are we doing?
+&amp;gt; Expressing imperative knowledge.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Procedures&lt;/th&gt;
+&lt;th&gt;Data&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Primitive Elements&lt;/td&gt;
+&lt;td&gt;+ * &amp;lt; =&lt;/td&gt;
+&lt;td&gt;4 15.6&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Means of Combination&lt;/td&gt;
+&lt;td&gt;() composition  COND IF&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Means of Abstraction&lt;/td&gt;
+&lt;td&gt;DEFINE&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&#34;coming-up&#34;&gt;COMING UP!&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;How it is&lt;/em&gt;&amp;hellip; that you make a link between the procedure and the processes within the machine.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;How it is&lt;/em&gt;&amp;hellip; that you use the power of Lisp to talk not only about little computations, but about more general, conventional methods of doing things.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;tree accumulation.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;cond&#34;&gt;&lt;code&gt;COND&lt;/code&gt;&lt;/h2&gt;
+
+&lt;h3 id=&#34;logical-operators&#34;&gt;Logical Operators&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;define&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;square-sum-larger&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;b&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;c)&lt;/span&gt;
+	&lt;span style=&#34;color: #f8f8f2&#34;&gt;(cond ((and (&amp;lt; a&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;b)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&amp;lt; a&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;c))&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(+ (* b&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;b)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(* c&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;c)))&lt;/span&gt;
+        &lt;span style=&#34;color: #f8f8f2&#34;&gt;((and (&amp;lt; b&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;a)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&amp;lt; b&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;c))&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(+ (* a&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;a)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(* c&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;c)))&lt;/span&gt;
+        &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(+ (* a&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;a)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(* b&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;b)))))&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;square-sum-larger&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;;; 13&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;square-sum-larger&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;13&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;6&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;4&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;;; 205&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;; Original Guess-And-Square method of finding Square Roots&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;define&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;square&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x)&lt;/span&gt;
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;(* x&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x))&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;define&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;sqrt-iter&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x)&lt;/span&gt;
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;if &lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;good-enough?&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x)&lt;/span&gt;
+      &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess&lt;/span&gt;
+      &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;sqrt-iter&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;improve&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x)&lt;/span&gt;
+                 &lt;span style=&#34;color: #f8f8f2&#34;&gt;x)))&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;define&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;good-enough?&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x)&lt;/span&gt;
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&amp;lt; (&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;abs&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(- (&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;square&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x))&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0.001&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;define&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;average&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;y)&lt;/span&gt;
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;(/ (+ x&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;y)&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;define&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;improve&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x)&lt;/span&gt;
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;average&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(/ x&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;guess)))&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;define&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;sqrt&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x)&lt;/span&gt;
+  &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;sqrt-iter&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1.0&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;x))&lt;/span&gt;
+
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;sqrt&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;8&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

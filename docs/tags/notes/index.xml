@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SICP Book Club!</title>
-    <link>https://newswim.github.io/SICP-book-club/index.xml</link>
-    <description>Recent content on SICP Book Club!</description>
+    <title>Notes on SICP Book Club!</title>
+    <link>https://newswim.github.io/SICP-book-club/tags/notes/index.xml</link>
+    <description>Recent content in Notes on SICP Book Club!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Feb 2017 01:08:57 -0600</lastBuildDate>
-    <atom:link href="https://newswim.github.io/SICP-book-club/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://newswim.github.io/SICP-book-club/tags/notes/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Book_Club_02</title>
@@ -50,15 +49,6 @@
 &lt;li&gt;&lt;a href=&#34;http://www.cs.toronto.edu/~sheila/384/w11/simple-prolog-examples.html&#34;&gt;Prolog Examples&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Book_Club_01</title>
-      <link>https://newswim.github.io/SICP-book-club/post/Book_Club_01/</link>
-      <pubDate>Sat, 25 Feb 2017 01:08:54 -0600</pubDate>
-      
-      <guid>https://newswim.github.io/SICP-book-club/post/Book_Club_01/</guid>
-      <description></description>
     </item>
     
     <item>
